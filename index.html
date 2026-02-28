@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -38,7 +38,12 @@
             height="25"
           />
         </a>
-        <button aria-label="Open Menu" class="header__menu" id="menu-open">
+        <button
+          aria-label="Open Menu"
+          class="header__menu"
+          id="menu-open"
+          type="button"
+        >
           <img
             src="./assets/images/icon-hamburger.svg"
             width="18"
@@ -48,7 +53,7 @@
         </button>
         <nav class="nav" id="menu">
           <div class="nav__header">
-            <a href="#"
+            <a href="#" aria-label="Link to Home page"
               ><img
                 class="nav__logo"
                 src="./assets/images/logo-bookmark-white.svg"
@@ -405,21 +410,21 @@
           </li>
         </ul>
       </div>
-    </footer>
 
-    <footer class="attribution">
-      <p>
-        Challenge by
-        <a
-          class="attribution__link"
-          href="https://www.frontendmentor.io?ref=challenge"
-          target="_blank"
-          >Frontend Mentor</a
-        >. Coded by
-        <a class="attribution__link" href="https://rubendeman.nl"
-          >Ruben de Man</a
-        >.
-      </p>
+      <div class="attribution">
+        <p>
+          Challenge by
+          <a
+            class="attribution__link"
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a class="attribution__link" href="https://rubendeman.nl"
+            >Ruben de Man</a
+          >.
+        </p>
+      </div>
     </footer>
 
     <script src="./app.js"></script>

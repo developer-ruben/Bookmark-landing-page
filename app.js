@@ -8,14 +8,14 @@ const menuCloseBtn = document.getElementById("menu-close");
 
 menuOpenBtn.addEventListener("click", () => menu.classList.add("nav--open"));
 menuCloseBtn.addEventListener("click", () =>
-  menu.classList.remove("nav--open")
+  menu.classList.remove("nav--open"),
 );
 
 const validateEmail = (email) => {
   return String(email)
     .toLowerCase()
     .match(
-      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
     );
 };
 
@@ -32,7 +32,7 @@ const submitForm = (e) => {
   console.log("Form submitted!");
 };
 
-const questionClick = () => {
+const questionClick = (question) => {
   if (question.classList.contains("question--open")) {
     question.classList.remove("question--open");
     return;
@@ -44,6 +44,7 @@ const questionClick = () => {
 };
 
 form.addEventListener("submit", submitForm);
+
 questions.forEach((question) => {
-  question.addEventListener("click", questionClick);
+  question.addEventListener("click", () => questionClick(question));
 });
