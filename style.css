@@ -775,12 +775,12 @@ button {
   }
 
   .header .nav {
-    width: 100%;
     position: absolute;
     top: 105px;
     transform: translateY(-200%);
     z-index: 6;
     transition: transform 0.8s ease-in-out;
+    width: 100%;
     max-width: calc(100% - 160px);
   }
 
@@ -943,9 +943,9 @@ button {
 
   .features-section .container::after {
     top: 500px;
+    left: -269px;
     width: 577px;
     height: 203px;
-    left: -269px;
   }
 
   .section__header {
@@ -996,15 +996,15 @@ button {
   .faq-section .container {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-700);
     align-items: center;
+    gap: var(--spacing-700);
   }
 
   .faq__question {
     font-weight: var(--text-preset-2-mobile-regular-font-weight);
     font-size: var(--text-preset-2-mobile-regular-font-size);
+    line-height: var(--text-preset-2-mobile-regular-line-height);
     letter-spacing: var(--text-preset-2-mobile-regular-letter-spacing);
-    letter-spacing: var(--text-preset-2-mobile-regular-line-height);
   }
 
   .faq {
