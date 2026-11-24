@@ -1021,7 +1021,7 @@ button {
     font-weight: var(--text-preset-2-mobile-regular-font-weight);
     font-size: var(--text-preset-2-mobile-regular-font-size);
     letter-spacing: var(--text-preset-2-mobile-regular-letter-spacing);
-    letter-spacing: var(--text-preset-2-mobile-regular-line-height);
+    line-height: var(--text-preset-2-mobile-regular-line-height);
   }
 
   .form {
@@ -1052,7 +1052,7 @@ button {
     font-weight: var(--text-preset-2-mobile-regular-font-weight);
     font-size: var(--text-preset-2-mobile-regular-font-size);
     letter-spacing: var(--text-preset-2-mobile-regular-letter-spacing);
-    letter-spacing: var(--text-preset-2-mobile-regular-line-height);
+    line-height: var(--text-preset-2-mobile-regular-line-height);
   }
 
   .footer__socials {
