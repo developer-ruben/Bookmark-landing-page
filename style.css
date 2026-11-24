@@ -734,29 +734,6 @@ button {
     hue-rotate(321deg) brightness(93%) contrast(111%);
 }
 
-/* ATTRIBUTION */
-
-.attribution {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  border-top-right-radius: var(--spacing-200);
-  background: hsl(var(--clr-blue-850));
-  padding: var(--spacing-200);
-}
-
-.attribution__link {
-  transition: color 0.3s ease-in-out;
-  color: hsl(var(--clr-white));
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.attribution__link:hover {
-  color: hsl(var(--clr-blue-200));
-}
-
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 1104px) {
